@@ -7,7 +7,9 @@ import ContactRoutes from "./routes/ContactRoutes.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://www.re-sume.in",
+}));
 app.use(express.json());
 connectDB();
 
